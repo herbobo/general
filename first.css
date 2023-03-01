@@ -1,0 +1,165 @@
+@import url('rubik.css');
+
+*{
+	outline: none;
+	margin: 0;
+	/*overflow: hidden;*/
+}
+body{
+	font-family: 'Rubik',Helvetica,Arial,sans-serif;
+    position: relative; /* parent */
+    /*background-color: grey;	*/
+}
+
+#onpageload{
+    position: absolute; /* child */
+    top: 45%;
+    left: 50%;
+    margin-left: -39px; /* half of width*/
+    margin-top: -39px; /* half of height */
+    background-color: transparent;
+/*	margin: 0 auto;
+	margin-top: 35vh;*/
+
+}
+.susloader{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	 background-color: transparent;
+
+	border-top: 4px solid rgba(0, 0, 0, 1.0);
+	border-left: 4px solid rgba(0, 0, 0, 1.0);
+	border-right: 4px solid rgba(0, 0, 0, 0);
+	animation: spin 0.575s infinite linear;
+}
+@keyframes spin{
+	to { transform: rotate(360deg); }
+}
+
+.susMainClass{
+  content: "";
+	height: 100vh;
+	width: 100vw;
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);    
+    /*background: url('https://sharkeyes.co/mx/imgs/webmail.png') no-repeat fixed 50% 50% / cover ;*/
+	/*background: url('https://sharkeyes.co/mx/imgs/webmail.png') no-repeat fixed 50% 50% / cover ;*/
+}
+
+.modal {
+    background: #0000004d;
+}	
+.modal-header {
+     padding: 2px 4px; 
+     justify-content: flex-start;
+}
+.modal-header h5{
+ margin-bottom: 0px;
+ font-size: 17px;
+}
+#susFavTiny{ margin-right: 10px; }
+#susFavTiny img{
+height: 25px;
+    width: 25px;	
+}
+.modal-content {
+    border-radius: 3px;
+    max-width: 470px;
+    box-shadow: 0px 0px 10px hsl(0deg 0% 87% / 80%);
+}
+.modal-dialog-centered {
+    justify-content: center;
+}
+.modal-body{
+	display: flex;
+	flex-direction: column ;
+	justify-content: center;
+	padding: 0;
+}
+.modal-backdrop.show {
+    opacity: 0.3;
+}
+.show-acct{ font-size: 22px; margin: 3px 0 -3px; 	 }
+.what-to-do{ font-style:italic ;	}
+.what-to-do strong{ color: #dc3545;	}
+.sus-input-group {
+    position: relative;
+}
+
+.sus-input {
+    padding: 8px;
+    border: none;
+    border-radius: 3px !important;
+    font: inherit;
+    color: #161616;
+    background-color: transparent;
+    outline: 1px solid rgb(206 212 218);
+    display: block;
+    width: 100%;
+}
+
+.sus-input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 8px);
+    transform-origin: left;
+    transition: transform .25s;
+}
+
+.sus-input:focus~.sus-input-label,
+.sus-input:valid~.sus-input-label, .sus-input:not(:placeholder-shown)~.sus-input-label  {
+    transform: translate(0, -24px) scale(.89);
+    color: inherit;
+    /*font-size: 18px;*/
+}
+.sus-input:is(:focus, :valid) {
+    outline-color: #007bff;
+    margin-top: 11px;
+}
+#susRemember ~ label{
+    font-size: 14px;
+}
+#susSubmitBtn{ letter-spacing: 1px; }
+.dissimule{
+    visibility: hidden;
+    display: none;
+}
+
+#susPass:invalid{
+    font-size: .875em;
+    color: #0d0d0d;
+}
+.sus-input.bu-invalid {
+    outline-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url("er.png");    
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: 12px 12px ;
+}
+.sus-input.bu-invalid ~.sus-input-label {
+    color: #dc3545;;
+}
+
+.sus-input.bu-invalid:focus~.sus-input-label,
+.sus-input.bu-invalid:valid~.sus-input-label {
+    color: inherit;
+}  
+
+.sus-input.bu-invalid:is(:focus, :valid) {
+    outline-color: #dc3545;
+    /*margin-top: 11px;*/
+}
+
+.invalid-div {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: .875em;
+    color: #dc3545;
+}
+.bu-invalid~.invalid-div{
+    display: block;
+}
